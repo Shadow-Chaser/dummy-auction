@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Cart from './Components/Cart/Cart';
