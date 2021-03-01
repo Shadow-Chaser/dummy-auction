@@ -10,7 +10,7 @@ const Cart = (props) => {
             <h2>Player List:</h2>
             <ul>
                 {
-                    addedPlayer.map(player => <li>{player.name}</li>)
+                    addedPlayer.map(player => <li><b>{player.name}</b> <br/> <small>Auction Money : {player.salary}</small> </li>)
                 }
             </ul>
             <h2>Total Budget : $ {totalBudget}</h2>
