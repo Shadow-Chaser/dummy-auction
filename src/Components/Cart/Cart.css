@@ -1,5 +1,5 @@
 .cart-container{
-    /* position: fixed; */
+     position: initial; 
     width:20em;
     margin-top: 50px;
     padding: 30px;
