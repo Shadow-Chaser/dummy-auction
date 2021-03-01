@@ -8,6 +8,15 @@ import Player from './Components/Player/Player';
 function App() {
 
   const [players, setPlayers] = useState([]);
+  const [addedPlayer, setAddedPlayer] = useState([]);
+
+  const handleAddPlayer = (player)=> {
+    const newAddedPlayer = [...addedPlayer, player];
+    setAddedPlayer(newAddedPlayer);
+  };
+
+  const totalBudget = addedPlayer.reduce((sum,user)=>sum+user.salary, 0);
+
 
   useEffect(()=>{
     fetch(`https://api.mocki.io/v1/94140e49`)
@@ -27,12 +36,12 @@ function App() {
       <div className="d-flex  row">
         <div className="col-md-8 col-sm-12">
           {
-            players.map(player => <Player player={player} key={userEvent.id}></Player>)
+            players.map(player => <Player player={player} key={player.id} handleAddPlayer={handleAddPlayer} ></Player>)
           }
         </div>
         
         <div className="col-md-4 col-sm-12"> 
-          <Cart></Cart>
+          <Cart addedPlayer={addedPlayer} totalBudget={totalBudget}></Cart>
         </div>
        
       </div>

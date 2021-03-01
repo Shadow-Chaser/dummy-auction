@@ -3,7 +3,7 @@ import './Player.css'
 import {  FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 const Player = (props) => {
-    const {name,age, born, role, image, salary, batStyle, bowlStyle } = props.player;
+    const {name,age, born, role, image, salary, batStyle, bowlStyle} = props.player;
 
     return (
         <div className="player-container border border-5 rounded-3 d-flex m-3 p-2 ">
@@ -19,7 +19,7 @@ const Player = (props) => {
                 <h5>Batting Style : {batStyle}</h5>
                 <h5>Auction Money : $ {salary}</h5>
 
-                <button type="button" class="btn btn-primary"><FontAwesomeIcon icon={faUserPlus} /> Add Player</button>
+                <button type="button" class="btn btn-primary" onClick={()=>props.handleAddPlayer(props.player)} ><FontAwesomeIcon icon={faUserPlus} /> Add Player</button>
             </div>
         </div>
     );
