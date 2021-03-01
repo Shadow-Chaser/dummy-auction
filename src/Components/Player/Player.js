@@ -1,6 +1,7 @@
 import React from 'react';
 import './Player.css'
-
+import {  FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 const Player = (props) => {
     const {name,age, born, role, image, salary, batStyle, bowlStyle } = props.player;
 
@@ -17,6 +18,8 @@ const Player = (props) => {
                 <h5>Bowling Style : {bowlStyle}</h5>
                 <h5>Batting Style : {batStyle}</h5>
                 <h5>Auction Money : $ {salary}</h5>
+
+                <button type="button" class="btn btn-primary"><FontAwesomeIcon icon={faUserPlus} /> Add Player</button>
             </div>
         </div>
     );
