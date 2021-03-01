@@ -19,7 +19,7 @@ function App() {
 
 
   useEffect(()=>{
-    fetch(`https://api.mocki.io/v1/94140e49`)
+    fetch(`https://api.mocki.io/v1/024defca`)
     .then(response => response.json())
     .then(data => {
         setPlayers(data);
@@ -34,9 +34,8 @@ function App() {
       <Header></Header>
 
 
-
-      <div className="d-flex  row">   
-          <div className="col-md-8 col-sm-12 ">
+      <div className="d-flex  row ">   
+          <div className="col-md-8 col-sm-12 d-flex flex-wrap">
             {
               players.map(player => <Player player={player} key={player.id} handleAddPlayer={handleAddPlayer} ></Player>)
             }

@@ -1,4 +1,4 @@
-.player-container img{
+.player img{
     height: 150;
     width: 250px;
 }
@@ -11,3 +11,10 @@
     font-weight: 700;
 }
 
+.player{
+    width:24em;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}

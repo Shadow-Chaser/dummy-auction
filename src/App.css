@@ -38,3 +38,6 @@
 }
 
 
+.player-container{
+  display: grid;
+}

@@ -6,20 +6,18 @@ const Player = (props) => {
     const {name,age, born, role, image, salary, batStyle, bowlStyle} = props.player;
 
     return (
-        <div className="player-container border border-5 rounded-3 d-flex m-3 p-2 ">
+        <div className="player ms-5 ">
 
             <img src={image} alt=""/>
 
             <div>
-                <h1>{name}</h1>
-                <h5>Born : {born}</h5>
-                <h5>Age : {age} Years</h5>
-                <h5>Role : {role}</h5>
-                <h5>Bowling Style : {bowlStyle}</h5>
-                <h5>Batting Style : {batStyle}</h5>
-                <h5>Auction Money : $ {salary}</h5>
-
-              
+                <h3>{name}</h3>
+                <h6>Born : {born}</h6>
+                <h6>Age : {age} Years</h6>
+                <h6>Role : {role}</h6>
+                <h6>Bowling Style : {bowlStyle}</h6>
+                <h6>Batting Style : {batStyle}</h6>
+                <h6>Auction Money : $ {salary}</h6>
 
                 <button type="button" className="add-button btn btn-primary" onClick={()=>props.handleAddPlayer(props.player)} ><FontAwesomeIcon icon={faUserPlus} /> Add Player</button>
             </div>

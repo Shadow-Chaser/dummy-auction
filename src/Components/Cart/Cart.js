@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cart.css'
 import {  FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoins, faUserPlus, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faCoins, faUsers } from "@fortawesome/free-solid-svg-icons";
 const Cart = (props) => {
     const{addedPlayer, totalBudget} = props;
     console.log(addedPlayer);
