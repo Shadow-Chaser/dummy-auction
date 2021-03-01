@@ -1,7 +1,6 @@
 .player-container img{
     height: 150;
     width: 250px;
-
 }
 .add-button{
     padding: 0.5em 1em 0.5em 1em;
@@ -11,3 +10,4 @@
     margin-top: 5px;
     font-weight: 700;
 }
+

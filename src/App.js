@@ -33,12 +33,16 @@ function App() {
 
       <Header></Header>
 
-      <div className="d-flex  row">
-        <div className="col-md-8 col-sm-12">
-          {
-            players.map(player => <Player player={player} key={player.id} handleAddPlayer={handleAddPlayer} ></Player>)
-          }
-        </div>
+
+
+      <div className="d-flex  row">   
+          <div className="col-md-8 col-sm-12 ">
+            {
+              players.map(player => <Player player={player} key={player.id} handleAddPlayer={handleAddPlayer} ></Player>)
+            }
+          </div>
+        
+        
         
         <div className="col-md-4 col-sm-12"> 
           <Cart addedPlayer={addedPlayer} totalBudget={totalBudget}></Cart>

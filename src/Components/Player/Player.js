@@ -19,6 +19,8 @@ const Player = (props) => {
                 <h5>Batting Style : {batStyle}</h5>
                 <h5>Auction Money : $ {salary}</h5>
 
+              
+
                 <button type="button" className="add-button btn btn-primary" onClick={()=>props.handleAddPlayer(props.player)} ><FontAwesomeIcon icon={faUserPlus} /> Add Player</button>
             </div>
         </div>
